@@ -8,20 +8,21 @@ body {
   margin: 0 100px;
 }
 
-/* Estilos da navbar */
+/*header, nav começo */
 .navbar {
+  /* estilo texto destaque h1 */
+  font-size: 16px;
+  line-height: 97.49%;
+  font-weight: 500;
+  font-family: "jetBrainsMono";
+  letter-spacing: 0.055em;
+
   background-color: var(--support-2);
   text-align: center;
   align-items: center;
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  font-size: 16px;
-  line-height: 97.49%;
-  font-weight: 500;
-  font-family: "jetBrainsMono";
-  font-size: normal;
-  letter-spacing: 0.055em;
 }
 
 /* Estilos da logo */
@@ -30,7 +31,7 @@ body {
 }
 
 .logo a img {
-  width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+  width: 100px;
 }
 
 /* Estilos do menu */
@@ -55,12 +56,14 @@ body {
 }
 
 .button-stroke {
+  /* estilo de texto 01 */
   font-size: 16px;
   line-height: 97.49%;
   font-weight: 600;
   font-family: "jetBrainsMono";
   font-size: normal;
   letter-spacing: 0.055em;
+
   background-color: var(--support-2);
   border: 2px solid var(--support-1);
   border-radius: 5px;
@@ -81,4 +84,103 @@ body {
   border: 2px solid var(--primary);
   color: var(--support-2);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/*header, nav fim*/
+
+.container {
+  display: flex;
+}
+
+.column-left {
+  flex: 1;
+  padding: 20px;
+}
+
+.column-left h1 {
+  /* estilo de h1 */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 97.49%;
+  letter-spacing: 0.055em;
+
+  flex: 1;
+  padding: 10px;
+  color: var(--support-1);
+}
+
+.column-left h4 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 114.49%;
+  letter-spacing: 0.055em;
+
+  color: var(--gray-2);
+}
+
+.column-left span {
+  color: var(--primary-dark);
+}
+
+.column-left input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.column-left button {
+  padding: 10px 20px;
+}
+
+.column-right {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* testanto responsividade */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .menu {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .menu a {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .logo,
+  .menu,
+  .button {
+    flex-basis: 100%;
+    text-align: center;
+  }
 }
