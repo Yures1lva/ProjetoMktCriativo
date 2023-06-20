@@ -1,0 +1,46 @@
+/* typografia */
+
+/* families*/
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/assets/fonts/JetBrainsMono/ttf/JetBrainsMono-Medium.ttf"),
+    url("/assets/fonts/JetBrainsMono/webfonts/JetBrainsMono-Medium.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrainsMono bold";
+  src: url("/assets/fonts/JetBrainsMono/ttf/JetBrainsMono-Bold.ttf"),
+    url("/assets/fonts/JetBrainsMono/webfonts/JetBrainsMono-Bold.woff2")
+      format("woff2");
+}
+
+/* sizes */
+h1 {
+  font-size: 30px;
+  letter-spacing: 0.55em;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4,
+p {
+  font-size: 16px;
+  letter-spacing: 0.055em;
+  line-height: 97.49%;
+}
+
+/* weights */
+:root {
+  --weight1: 400;
+  --weight2: 500;
+  --weight3: 700;
+  --height: 54px;
+  -spacing: 0.055em;
+}

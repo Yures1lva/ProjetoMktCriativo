@@ -1,0 +1,20 @@
+/* paleta de cores */
+
+h1 {
+}
+
+:root {
+  --primary: #8170e6;
+  --primary-dark: #715fd9;
+  --primary-light: #9f93e6;
+}
+:root {
+  --support-1: #453d78;
+  --support-2: #ffffff;
+  --support-3: #faf9fe;
+}
+:root {
+  --gray-1: #828282;
+  --gray-2: #1e1e1e;
+  --gray-3: #1e1e1e;
+}
