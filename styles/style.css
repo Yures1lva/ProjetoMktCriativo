@@ -32,6 +32,11 @@ body {
 
 .logo a img {
   width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.logo a img:hover {
+  transform: scale(1.2);
 }
 
 /* Estilos do menu */
@@ -47,7 +52,13 @@ body {
   color: var(--support-1);
   font-weight: 600;
   margin-right: 0.4em;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito hover */
+.menu a:hover {
+  color: var(--primary-dark);
+  transform: scale(1.1);
 }
 
 /* Estilos do botão */
@@ -71,11 +82,6 @@ body {
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-/* Efeito hover */
-.menu a:hover {
-  color: var(--primary-dark);
 }
 
 .button-stroke:hover {
