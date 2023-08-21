@@ -46,17 +46,19 @@ body {
   justify-content: flex-end;
 }
 
-.menu a {
+.menu li {
   padding: 2em;
   text-decoration: none;
   color: var(--support-1);
   font-weight: 600;
   margin-right: 0.4em;
   transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  list-style-type: none;
 }
 
 /* Efeito hover */
-.menu a:hover {
+.menu li:hover {
   color: var(--primary-dark);
   transform: scale(1.1);
 }
@@ -104,8 +106,6 @@ body {
 /* coluna esquerda */
 .column-left {
   flex: 1.6;
-  /* padding: 20px; */
-  border: 2px black solid;
   display: flex;
   height: 34.375em;
   flex-direction: column;
@@ -124,7 +124,7 @@ body {
   line-height: 97.49%;
   letter-spacing: 0.055em;
   
-  padding: 10px;
+  padding-top: 10px;
   color: var(--support-1);
 }
 
@@ -142,20 +142,25 @@ body {
 /* texto em destaque */
 .column-left span {
   color: var(--primary-dark);
+  padding: 0;
+  margin: 0;
 }
 
 
 
 /* form da coluna esquerda */
 
+.item2{
+  width: 100%;
+}
+
 .form-sub{
   display: flex;
+  width: 80%;
   align-content: flex-end;
-  border: 2px solid red;
 }
 
 .input-default {
-  flex: 1;
   outline: none;
   color: rgb(255 255 255 );
   height: 45px;
@@ -163,6 +168,8 @@ body {
   border: 1.5px solid var(--gray-1);
   border-radius: 0.375rem;
   flex: 2;
+  box-sizing: border-box;
+  margin-right: 5px;
 }
 
 input-default:focus {
@@ -179,6 +186,8 @@ input-default:focus {
   background-color: var(--primary);
   border-radius: 0.375rem;
   border: none;
+  height: 45px;
+
   outline: none;
 }
 
