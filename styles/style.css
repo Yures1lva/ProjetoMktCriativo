@@ -5,7 +5,6 @@ body {
   padding: 0;
   margin: 0;
   background: var(--support-2);
-  margin: 0 100px;
 }
 
 .container {
@@ -295,13 +294,21 @@ input-default:focus {
   text-align: left;
 }
 
+.mkt-point {
+  margin-top: 200px;
+}
+
 .services2 {
-  margin-top: 100px;
   background: url("../assets/imgs/bkg-services.png"),
-    lightgray 80% / cover no-repeat;
-  filter: blur(6.5px);
+    white 80% / cover no-repeat;
   width: 100%;
-  height: 600px;
+  height: 500px;
+  text-align: center;
+}
+
+.services2 img {
+  padding-top: 80px;
+  height: 250px;
 }
 
 /* testanto responsividade */
