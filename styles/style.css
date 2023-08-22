@@ -162,6 +162,12 @@ header {
   width: 100%;
 }
 
+.item2 p {
+  margin: 0;
+  padding: 3px 0;
+  font-family: "NotoSerifThai";
+}
+
 .form-sub {
   display: flex;
   width: 100%;
@@ -239,17 +245,40 @@ input-default:focus {
 }
 
 .cards-services {
-  margin: 50px 0;
   width: 100%;
+  margin: 80px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .card-service {
-  padding-bottom: 5px;
+  padding-bottom: 1px;
   color: var(--gray-1);
   width: 290px;
   border-radius: 4.567px;
   background: var(--support-02, #fff);
   box-shadow: 2px 3.653846263885498px 7.307692527770996px -1.826923131942749px rgba(9, 30, 66, 0.25);
+}
+
+.card-service:hover img {
+  border-radius: 0.28544rem;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+.card1:hover p::before {
+  content: "O marketing se concentra em atender às necessidades dos clientes de maneira lucrativa e sustentável, ao mesmo tempo que alcança objetivos de negócios de longo prazo da empresa. Clique e saiba mais";
+}
+
+.card2:hover p::before {
+  content: "O designer de publicações trabalha em estreita colaboração com o redator, o editor e outros membros da equipe de produção para garantir que o design complemente a mensagem da publicação";
+}
+.card3:hover p::before {
+  content: "O marketing se concentra em atender às necessidades dos clientes de maneira lucrativa e sustentável, ao mesmo tempo que alcança objetivos de negócios de longo prazo da empresa. Clique e saiba mais";
 }
 
 .card-service h2 {
@@ -264,6 +293,15 @@ input-default:focus {
   width: 95%;
   padding: 5px;
   text-align: left;
+}
+
+.services2 {
+  margin-top: 100px;
+  background: url("../assets/imgs/bkg-services.png"),
+    lightgray 80% / cover no-repeat;
+  filter: blur(6.5px);
+  width: 100%;
+  height: 600px;
 }
 
 /* testanto responsividade */
