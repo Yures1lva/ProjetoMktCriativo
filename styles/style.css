@@ -129,6 +129,11 @@ body {
   padding-top: 10px;
   color: var(--support-1);
 }
+/* texto em destaque */
+.destaque {
+  color: var(--primary-dark);
+  
+}
 
 
 
@@ -143,13 +148,7 @@ body {
 
   color: var(--gray-2);
 }
-/* texto em destaque */
-.column-left span {
-  color: var(--primary-dark);
-  padding: 0;
-  margin: 0;
-  
-}
+
 
 
 
@@ -215,12 +214,58 @@ input-default:focus {
   height: auto;
 }
 
+
+
+/* seção de serviços */
 .divider{
   border-bottom: 1px solid var(--gray-1);
   margin: 100px auto;
   width: 30%;
 }
 
+.services {
+  text-align: center;
+}
+
+.services h1{
+  font-family: "NotoSerifThai";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 97.49%;
+  letter-spacing: 0.055em;
+  
+  padding-top: 10px;
+  color: var(--support-1);
+}
+
+.cards-services{
+  margin: 50px 0;
+  width: 100%;
+}
+
+.card-service{
+  padding-bottom: 5px;
+  color: var(--gray-1);
+  width: 290px;
+  border-radius: 4.567px;
+background: var(--support-02, #FFF);
+box-shadow: 1px 3.653846263885498px 7.307692527770996px -1.826923131942749px rgba(9, 30, 66, 0.25);
+}
+
+.card-service h2{ 
+  color: var(--primary-dark);
+  font-family: "JetBrainsMono";
+  font-size: 18px;
+  width: 100%;
+}
+
+.card-service p{
+  font-size: 14px;
+  width: 100%;
+  margin: 2px;
+  text-align: left;
+}
 
 
 
