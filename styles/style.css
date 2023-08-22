@@ -298,6 +298,7 @@ input-default:focus {
   margin-top: 200px;
 }
 
+/* serviços parte 2 */
 .services2 {
   background: url("../assets/imgs/bkg-services.png"),
     white 80% / cover no-repeat;
@@ -309,6 +310,24 @@ input-default:focus {
 .services2 img {
   padding-top: 80px;
   height: 250px;
+}
+
+.services2 ul {
+  margin-top: 20px;
+  max-width: 1000px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services2 ul li {
+  background-color: rgba(64, 64, 64, 0.4);
+  color: white;
+  padding: 10px;
+  font-family: "JetBrainsMono";
+  max-width: 200px;
+  border-top: rgba(205, 205, 205, 1) 15px solid;
+  border-left: rgba(205, 205, 205, 1) 15px solid;
 }
 
 /* testanto responsividade */
