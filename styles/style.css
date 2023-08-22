@@ -8,15 +8,26 @@ body {
   margin: 0 100px;
 }
 
+.container {
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
 /*header, nav começo */
+header {
+  display: flex;
+  justify-content: center;
+}
 .navbar {
   /* estilo texto destaque h1 */
+  position: fixed;
+  z-index: 1000;
   font-size: 16px;
   line-height: 97.49%;
+  width: 100%;
   font-weight: 500;
   font-family: "jetBrainsMono";
   letter-spacing: 0.055em;
-
   background-color: var(--support-2);
   text-align: center;
   align-items: center;
@@ -95,12 +106,12 @@ body {
 }
 /*header, nav fim*/
 
+/* top content */
 
-/* Menu inicial */
-.container {
+.top-content {
   display: flex;
   align-content: space-between;
-
+  padding-top: 150px;
 }
 
 /* coluna esquerda */
@@ -113,7 +124,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  
 }
 
 /* coluna esquerda título*/
@@ -125,17 +135,14 @@ body {
   font-size: 30px;
   line-height: 97.49%;
   letter-spacing: 0.055em;
-  
+
   padding-top: 10px;
   color: var(--support-1);
 }
 /* texto em destaque */
 .destaque {
   color: var(--primary-dark);
-  
 }
-
-
 
 /* coluna esquerda texto*/
 .column-left h4 {
@@ -149,16 +156,13 @@ body {
   color: var(--gray-2);
 }
 
-
-
-
 /* form da coluna esquerda */
 
-.item2{
+.item2 {
   width: 100%;
 }
 
-.form-sub{
+.form-sub {
   display: flex;
   width: 100%;
   align-content: flex-end;
@@ -166,7 +170,7 @@ body {
 
 .input-default {
   outline: none;
-  color: rgb(255 255 255 );
+  color: rgb(255 255 255);
   height: 45px;
   background-color: rgb(255 255 255 / 0.05);
   border: 1.5px solid var(--gray-1);
@@ -180,7 +184,7 @@ input-default:focus {
   border: 2px solid var(--primary);
 }
 
- .button-default {
+.button-default {
   align-self: flex-end;
   flex: 1;
   color: #fff;
@@ -197,10 +201,7 @@ input-default:focus {
 .button-default:hover {
   background-color: var(--primary-light);
   cursor: pointer;
-
 }
-
-
 
 /* coluna da direita */
 .column-right {
@@ -214,10 +215,8 @@ input-default:focus {
   height: auto;
 }
 
-
-
 /* seção de serviços */
-.divider{
+.divider {
   border-bottom: 1px solid var(--gray-1);
   margin: 100px auto;
   width: 30%;
@@ -227,63 +226,45 @@ input-default:focus {
   text-align: center;
 }
 
-.services h1{
+.services h1 {
   font-family: "NotoSerifThai";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 97.49%;
   letter-spacing: 0.055em;
-  
+
   padding-top: 10px;
   color: var(--support-1);
 }
 
-.cards-services{
+.cards-services {
   margin: 50px 0;
   width: 100%;
 }
 
-.card-service{
+.card-service {
   padding-bottom: 5px;
   color: var(--gray-1);
   width: 290px;
   border-radius: 4.567px;
-background: var(--support-02, #FFF);
-box-shadow: 1px 3.653846263885498px 7.307692527770996px -1.826923131942749px rgba(9, 30, 66, 0.25);
+  background: var(--support-02, #fff);
+  box-shadow: 2px 3.653846263885498px 7.307692527770996px -1.826923131942749px rgba(9, 30, 66, 0.25);
 }
 
-.card-service h2{ 
+.card-service h2 {
   color: var(--primary-dark);
   font-family: "JetBrainsMono";
   font-size: 18px;
   width: 100%;
 }
 
-.card-service p{
+.card-service p {
   font-size: 14px;
-  width: 100%;
-  margin: 2px;
+  width: 95%;
+  padding: 5px;
   text-align: left;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* testanto responsividade */
 @media (max-width: 768px) {
