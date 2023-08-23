@@ -1,3 +1,5 @@
+@import "colors.css";
+
 /* typografia */
 
 /* families*/
@@ -24,10 +26,12 @@
 h1 {
   font-size: 30px;
   letter-spacing: 0.55em;
+  color: var(--support-1, #453d78);
 }
 
 h2 {
   font-size: 20px;
+  color: var(--support-1, #453d78);
 }
 
 h3 {
@@ -36,9 +40,11 @@ h3 {
 
 h4,
 p {
+  font-family: "NotoSerifThai";
   font-size: 16px;
-  letter-spacing: 0.055em;
-  line-height: 97.49%;
+  letter-spacing: 0.069em;
+  line-height: 100.49%;
+  color: var(--support-1, #453d78);
 }
 
 /* weights */

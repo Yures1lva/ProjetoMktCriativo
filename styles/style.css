@@ -12,14 +12,24 @@ body {
   margin: 0 auto;
 }
 
+.section-title {
+  text-align: center;
+  font-family: "NotoSerifThai";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 97.49%;
+  letter-spacing: 0.055em;
+  padding-top: 10px;
+  color: var(--support-1);
+}
+
 /*header, nav começo */
-
-
 
 .navbar {
   /* estilo texto destaque h1 */
   position: fixed;
-  
+
   z-index: 1000;
   font-size: 16px;
   line-height: 97.49%;
@@ -28,10 +38,9 @@ body {
   font-family: "jetBrainsMono";
   letter-spacing: 0.055em;
   background-color: var(--support-2);
-  
 }
 
-.navbar div{
+.navbar div {
   text-align: center;
   align-items: center;
   /* padding: 10px; */
@@ -205,6 +214,7 @@ input-default:focus {
   border: none;
   height: 45px;
   outline: none;
+  transition: all 0.3s ease;
 }
 
 .button-default:hover {
@@ -235,18 +245,6 @@ input-default:focus {
   text-align: center;
 }
 
-.services h1 {
-  font-family: "NotoSerifThai";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 97.49%;
-  letter-spacing: 0.055em;
-
-  padding-top: 10px;
-  color: var(--support-1);
-}
-
 .cards-services {
   width: 100%;
   margin: 80px 0;
@@ -262,10 +260,12 @@ input-default:focus {
   border-radius: 4.567px;
   background: var(--support-02, #fff);
   box-shadow: 2px 3.653846263885498px 7.307692527770996px -1.826923131942749px rgba(9, 30, 66, 0.25);
+  transition: all 0.3s ease;
 }
 
 .card-service:hover img {
   border-radius: 0.28544rem;
+  cursor: pointer;
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.2) 0%,
@@ -332,6 +332,7 @@ input-default:focus {
   max-width: 200px;
   border-top: rgba(205, 205, 205, 1) 15px solid;
   border-left: rgba(205, 205, 205, 1) 15px solid;
+  transition: all 0.4s ease;
 }
 
 .services2 ul li:hover {
@@ -339,65 +340,144 @@ input-default:focus {
   color: white;
   border-top: none;
   border-left: none;
-  border-bottom: #9A8DEB 15px solid;
-  border-right: #9A8DEB 15px solid;
+  border-bottom: #9a8deb 15px solid;
+  border-right: #9a8deb 15px solid;
   cursor: pointer;
 }
 
-
-
-
 /* team time */
-.team{
+.team {
   text-align: center;
 }
 
-.team h1 {
-  font-family: "NotoSerifThai";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 97.49%;
-  letter-spacing: 0.055em;
+.descript-us {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-  padding-top: 10px;
+.team h1 {
+  text-align: left;
+  margin-top: 50px;
+  font-family: "NotoSerifThai";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.994%; /* 2.28738rem */
+  letter-spacing: 0.075rem;
+  padding-top: 20px;
+}
+
+.descript-us-rightContent {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 40%;
+  font-weight: 600;
   color: var(--support-1);
 }
 
-
-/* testanto responsividade */
-@media (max-width: 768px) {
-  .navbar {
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    flex-basis: 100%;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-  .menu {
-    flex-basis: 100%;
-    justify-content: center;
-  }
-
-  .menu a {
-    margin-right: 0;
-    margin-bottom: 5px;
-  }
+.cards-team {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-/* Estilos para celulares */
-@media (max-width: 480px) {
-  .navbar {
-    flex-direction: column;
-  }
+.card-team {
+  /* transition: all ease 0.3s; */
+  display: block;
+  padding: 0;
+  border-radius: 0.5rem;
+  border: transparent 2px solid;
+  box-sizing: border-box;
+  margin: 5px;
+}
 
-  .logo,
-  .menu,
-  .button {
-    flex-basis: 100%;
-    text-align: center;
-  }
+.card-team:hover {
+  border: var(--primary-dark) 2px solid;
+}
+
+.card-team:hover p {
+  content: "Design Product";
+}
+
+.cards-team article img {
+  height: 180px;
+  padding: 0;
+  margin: 0;
+}
+
+.cards-team article h1 {
+  transform: translate(0, -45px);
+  margin: 0;
+  color: var(--primary-dark, #715fd9);
+  text-align: center;
+  font-family: "JetBrainsMono";
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 98.994%; /* 1.85613rem */
+  letter-spacing: 0.00938rem;
+
+  border-radius: 0.1875rem;
+  background: var(--support-02, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  width: fit-content;
+  display: inline-flex;
+  padding: 0.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+/* coments comentários */
+
+.comments {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.comment1 {
+  display: flex;
+  justify-content: left;
+  width: 45%;
+  margin: 2%;
+  padding-top: 20px;
+}
+
+.comment1 img:first-child {
+  height: 110px;
+  margin-right: 10px;
+}
+
+.comment1 div {
+  text-align: left;
+}
+
+.comment1 h3 {
+  font-family: "NotoSerifThai";
+  color: #404040;
+  margin: 0;
+}
+
+.comment1 div img {
+  margin: 0;
+}
+
+.comment1 p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* contact contato */
+.contact {
+  text-align: center;
 }
