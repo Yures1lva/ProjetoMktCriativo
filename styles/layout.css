@@ -194,21 +194,24 @@
   }
 
   .text-contact {
-    display: flex;
     flex-direction: column;
-    align-items: top;
-    /* border: 2px solid green; */
-    justify-content: flex-end;
+    border: 2px solid green;
+    justify-content: start;
   }
 
-  /* .text-contact h1 {
+  .text-contact h1 {
     border: red 2px solid;
-  } */
+  }
+
+  .contact div {
+    display: flex;
+    align-items: start;
+  }
 
   .contact div p {
     padding: 5px 0 0 10px;
     margin: 0;
-    /* border: blue 2px solid; */
+    border: blue 2px solid;
   }
 
   .contact-righ-content {
