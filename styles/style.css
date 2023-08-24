@@ -474,7 +474,8 @@ body {
 .contact {
   text-align: center;
 }
-.contact div {
+.text-contact,
+.pass-confirm {
   display: flex;
   align-items: top;
 }

@@ -163,8 +163,7 @@
   }
 
   .team {
-    margin-top: 230px;
-    margin-top: 10px;
+    padding-top: 110px;
     margin-left: 0px;
   }
 
@@ -195,23 +194,17 @@
 
   .text-contact {
     flex-direction: column;
-    border: 2px solid green;
     justify-content: start;
-  }
-
-  .text-contact h1 {
-    border: red 2px solid;
-  }
-
-  .contact div {
-    display: flex;
     align-items: start;
   }
 
-  .contact div p {
-    padding: 5px 0 0 10px;
+  .text-contact h1 {
     margin: 0;
-    border: blue 2px solid;
+  }
+
+  .contact div p {
+    padding: 5px 0 0 0px;
+    margin: 0 0 5px 0;
   }
 
   .contact-righ-content {
