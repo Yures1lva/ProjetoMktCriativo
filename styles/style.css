@@ -1,6 +1,11 @@
 @import "fonts.css";
 @import "colors.css";
 
+html{
+  scroll-behavior: smooth;
+}
+
+
 body {
   padding: 0;
   margin: 0;
@@ -89,24 +94,39 @@ body {
 
 .menu li {
   padding: 2em;
-  text-decoration: none;
-  color: var(--support-1);
   font-weight: 600;
-  margin-right: 0.4em;
-  transition: color 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
+    margin-right: 0.4em;
+    transition: 0.3s ease;
+    cursor: pointer;
+  text-decoration: none;
   list-style-type: none;
 }
 
 .menu li:last-child {
   padding: 0;
+
+
 }
+
+.menu li a {
+    color: var(--support-1);text-decoration: none;
+    transition: 0.3s ease,
+    
+}
+
 
 /* Efeito hover */
 .menu li:hover {
-  color: var(--primary-dark);
   transform: scale(1.1);
 }
+.menu a:hover{
+  color: var(--primary-dark);
+
+}
+
+
+
+
 
 /* Estilos do botão */
 .button {
