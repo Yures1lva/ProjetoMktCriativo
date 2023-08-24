@@ -3,6 +3,10 @@
 @import "style.css";
 
 @media (max-width: 460px) {
+  .container {
+    margin: 0 4%;
+  }
+
   /* sizes */
   h1 {
     font-size: 20px;
@@ -55,9 +59,71 @@
     background-color: aqua;
   }
 
-  .column-right img {
+  .top-content {
+    padding-top: 70px;
+  }
+
+  .top-content-column-left {
+    width: 100%;
+    margin-right: 0%;
+  }
+
+  .top-content-column-right img {
     display: none;
     overflow: hidden;
     opacity: 0;
+  }
+
+  .item2 p {
+    padding: 0;
+  }
+
+  .form-sub {
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: flex-end;
+  }
+
+  .form-sub input,
+  button {
+    margin-top: 5px;
+  }
+
+  .input-default {
+    flex: auto;
+    margin-right: 0;
+    padding-left: 10px;
+  }
+
+  .button-default {
+    flex: auto;
+    width: 100%;
+  }
+
+  .cards-services {
+    width: 100%;
+    margin: 80px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card-service {
+    margin: 15px auto;
+    width: 100%;
+  }
+
+  .card1 p::before {
+    content: "O marketing se concentra em atender às necessidades dos clientes de maneira lucrativa e sustentável, ao mesmo tempo que alcança objetivos de negócios de longo prazo da empresa. Clique e saiba mais";
+  }
+
+  .card2 p::before {
+    content: "O designer de publicações trabalha em estreita colaboração com o redator, o editor e outros membros da equipe de produção para garantir que o design complemente a mensagem da publicação";
+  }
+  .card3 p::before {
+    content: "O marketing se concentra em atender às necessidades dos clientes de maneira lucrativa e sustentável, ao mesmo tempo que alcança objetivos de negócios de longo prazo da empresa. Clique e saiba mais";
   }
 }

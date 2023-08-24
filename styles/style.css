@@ -36,6 +36,11 @@ body {
   color: var(--support-1);
 }
 
+/* texto em destaque */
+.destaque {
+  color: var(--primary-dark);
+}
+
 /*header, nav começo */
 
 .navbar {
@@ -144,7 +149,7 @@ body {
 }
 
 /* coluna esquerda */
-.column-left {
+.top-content-column-left {
   flex: 1.6;
   width: 80%;
   margin-right: 2%;
@@ -156,7 +161,7 @@ body {
 }
 
 /* coluna esquerda título*/
-.column-left h1 {
+.top-content-column-left h1 {
   /* estilo de h1 */
   font-family: "NotoSerifThai";
   font-style: normal;
@@ -168,20 +173,15 @@ body {
   padding-top: 10px;
   color: var(--support-1);
 }
-/* texto em destaque */
-.destaque {
-  color: var(--primary-dark);
-}
 
 /* coluna esquerda texto*/
-.column-left h4 {
+.top-content-column-left h4 {
   font-family: "NotoSerifThai";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 114.49%;
   letter-spacing: 0.055em;
-
   color: var(--gray-2);
 }
 
@@ -237,18 +237,6 @@ body {
 .button-default:hover {
   background-color: var(--primary-light);
   cursor: pointer;
-}
-
-/* coluna da direita */
-.column-right {
-  flex: 2;
-  text-align: right;
-}
-
-/* imagem a direita */
-.column-right img {
-  max-width: 100%;
-  height: auto;
 }
 
 /* seção de serviços */
