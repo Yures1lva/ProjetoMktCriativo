@@ -51,7 +51,6 @@ body {
 .navbar {
   /* estilo texto destaque h1 */
   position: fixed;
-
   z-index: 1000;
   font-size: 16px;
   line-height: 97.49%;
@@ -65,7 +64,7 @@ body {
 .navbar div {
   text-align: center;
   align-items: center;
-  /* padding: 10px; */
+  padding: 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -76,7 +75,7 @@ body {
 }
 
 .logo a img {
-  width: 100px;
+  width: 90px;
   transition: transform 0.3s ease;
 }
 
@@ -90,10 +89,11 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
 }
 
 .menu li {
-  padding: 2em;
+  padding: 0 2em;
   font-weight: 600;
     margin-right: 0.4em;
     transition: 0.3s ease;
