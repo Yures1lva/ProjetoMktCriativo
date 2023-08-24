@@ -253,4 +253,27 @@
   .icon-social {
     margin-top: 10px;
   }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: start;
+    padding: 0;
+  }
+
+  footer ul li {
+    flex-basis: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer h1 {
+    padding-top: 10px;
+  }
+
+  footer h2 {
+    text-decoration: underline;
+  }
 }
