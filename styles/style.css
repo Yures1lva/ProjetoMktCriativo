@@ -31,7 +31,7 @@ button {
   font-family: "NotoSerifThai";
   font-size: 30px;
   font-style: normal;
-  font-weight: var(--weight2);
+  font-weight: var(--weight3);
   line-height: 121.994%; /* 2.28738rem */
   letter-spacing: 0.075rem;
   padding-top: 20px;
@@ -397,6 +397,7 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .card-team {
@@ -406,20 +407,47 @@ button {
   border-radius: 0.5rem;
   border: transparent 2px solid;
   box-sizing: border-box;
-  margin: 5px;
+  margin: 3px 5px;
+  max-width: 80%;
+  width: 200px;
+}
+
+.card-team div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards-team article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
 }
 
 .card-team:hover {
   border: var(--primary-dark) 2px solid;
 }
-.cards-team article img {
-  height: 180px;
-  padding: 0;
-  margin: 0;
+
+.card-team h4 {
+  margin: 0 0 10px 3px;
+  text-align: left;
+  font-family: "JetBrainsMono";
+  font-weight: bolder;
+  color: var(--support-01, #453d78);
+}
+
+.card-team p {
+  text-align: left;
+  font-family: "JetBrainsMono";
+  color: var(--gray-01, #828282);
+  font-weight: var(--weight3);
+  margin: 3px 0 0 3px;
+  transform: translate(0, -10px);
 }
 
 .cards-team article h1 {
-  transform: translate(0, -45px);
+  transform: translate(0, -28px);
   margin: 0;
   color: var(--primary-dark, #715fd9);
   text-align: center;
