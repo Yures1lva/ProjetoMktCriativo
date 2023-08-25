@@ -37,6 +37,14 @@
     margin: 20px;
     flex: 380px;
   }
+
+
+  footer ul li:first-child {
+    width: 40%;
+  }
+
+
+
 }
 
 @media (max-width: 660px) {
@@ -263,4 +271,9 @@
   footer h2 {
     text-decoration: underline;
   }
+
+  footer ul li:first-child {
+    width: 100%;
+  }
+
 }
