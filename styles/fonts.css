@@ -24,14 +24,22 @@
 
 /* sizes */
 h1 {
-  font-size: 30px;
-  letter-spacing: 0.55em;
+  font-family: "JetBrainsMono";
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: var(--weight3);
+  line-height: 97.494%;
+  letter-spacing: 0.10313rem;
   color: var(--support-1, #453d78);
 }
 
 h2 {
-  font-size: 20px;
-  color: var(--support-1, #453d78);
+  color: var(--primary-dark, #715fd9);
+  font-family: "JetBrainsMono";
+  font-size: 1.14181rem;
+  font-style: normal;
+  font-weight: var(--weight3);
+  line-height: normal;
 }
 
 h3 {
@@ -41,10 +49,12 @@ h3 {
 h4,
 p {
   font-family: "NotoSerifThai";
-  font-size: 16px;
-  letter-spacing: 0.069em;
-  line-height: 100.49%;
-  color: var(--support-1, #453d78);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: var(--weight1);
+  line-height: 114.494%; /* 1.14494rem */
+  letter-spacing: var(--spacing);
+  color: var(--dark, #1e1e1e);
 }
 
 /* weights */
@@ -52,6 +62,5 @@ p {
   --weight1: 400;
   --weight2: 500;
   --weight3: 700;
-  --height: 54px;
-  -spacing: 0.055em;
+  --spacing: 0.055em;
 }

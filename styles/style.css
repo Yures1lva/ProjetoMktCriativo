@@ -1,10 +1,9 @@
 @import "fonts.css";
 @import "colors.css";
 
-html{
+html {
   scroll-behavior: smooth;
 }
-
 
 body {
   padding: 0;
@@ -12,8 +11,17 @@ body {
   background: var(--support-2);
 }
 
+button {
+  font-family: "JetBrainsMono";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: var(--weight1);
+  line-height: 97.494%; /* 0.97494rem */
+  letter-spacing: 0.055rem;
+}
+
 .container {
-  max-width: 1224px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -23,7 +31,7 @@ body {
   font-family: "NotoSerifThai";
   font-size: 30px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: var(--weight2);
   line-height: 121.994%; /* 2.28738rem */
   letter-spacing: 0.075rem;
   padding-top: 20px;
@@ -33,7 +41,7 @@ body {
   text-align: center;
   font-family: "NotoSerifThai";
   font-style: normal;
-  font-weight: bold;
+  font-weight: var(--weight3);
   font-size: 20px;
   line-height: 97.49%;
   letter-spacing: 0.055em;
@@ -52,12 +60,7 @@ body {
   /* estilo texto destaque h1 */
   position: fixed;
   z-index: 1000;
-  font-size: 16px;
-  line-height: 97.49%;
   width: 100%;
-  font-weight: 500;
-  font-family: "jetBrainsMono";
-  letter-spacing: 0.055em;
   background-color: var(--support-2);
 }
 
@@ -89,44 +92,44 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
+  flex-wrap: wrap;
 }
 
 .menu li {
+  color: var(--support-01, #453d78);
+  text-align: center;
+  font-family: "JetBrainsMono";
+  font-size: 1rem;
+  font-style: bold;
+  line-height: 97.494%; /* 0.97494rem */
+  letter-spacing: 0.055rem;
+
   padding: 0 2em;
-  font-weight: 600;
-    margin-right: 0.4em;
-    transition: 0.3s ease;
-    cursor: pointer;
+  margin-right: 0.4em;
+  transition: 0.3s ease;
+  cursor: pointer;
   text-decoration: none;
   list-style-type: none;
 }
 
 .menu li:last-child {
   padding: 0;
-
-
 }
 
 .menu li a {
-    color: var(--support-1);text-decoration: none;
-    transition: 0.3s ease,
-    
+  color: var(--support-1);
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-weight: var(--weight3);
 }
-
 
 /* Efeito hover */
 .menu li:hover {
   transform: scale(1.1);
 }
-.menu a:hover{
+.menu a:hover {
   color: var(--primary-dark);
-
 }
-
-
-
-
 
 /* Estilos do botão */
 .button {
@@ -134,19 +137,13 @@ body {
 }
 
 .button-stroke {
-  font-size: 16px;
-  line-height: 97.49%;
-  font-weight: 600;
-  font-family: "jetBrainsMono";
-  font-size: normal;
-  letter-spacing: 0.055em;
-
   background-color: var(--support-2);
   border: 2px solid var(--support-1);
   border-radius: 5px;
   color: var(--support-1);
   padding: 10px 20px;
   cursor: pointer;
+  font-weight: var(--weight3);
 
   transition: background-color 0.3s ease;
 }
@@ -170,42 +167,39 @@ body {
 
 /* coluna esquerda */
 .top-content-column-left {
-  flex: 1.6;
+  flex: 1;
   width: 80%;
   margin-right: 2%;
   display: flex;
-  height: 34.375em;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
 
+.top-content-column-right {
+  flex: 1;
+}
+
+.top-content-column-right img {
+  width: 100%;
+}
+
 /* coluna esquerda título*/
 .top-content-column-left h1 {
-  /* estilo de h1 */
-  font-family: "NotoSerifThai";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 97.49%;
-  letter-spacing: 0.055em;
-
   padding-top: 10px;
   color: var(--support-1);
 }
 
 /* coluna esquerda texto*/
 .top-content-column-left h4 {
-  font-family: "NotoSerifThai";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 114.49%;
-  letter-spacing: 0.055em;
   color: var(--gray-2);
 }
 
 /* form da coluna esquerda */
+
+.item {
+  margin: 0;
+}
 
 .item2 {
   width: 100%;
@@ -214,13 +208,11 @@ body {
 .item2 p {
   margin: 0;
   padding: 3px 0;
-  font-family: "NotoSerifThai";
 }
 
 .form-sub {
   display: flex;
   width: 100%;
-  align-content: flex-end;
 }
 
 .input-default {
@@ -243,9 +235,6 @@ body {
   align-self: flex-end;
   flex: 1;
   color: #fff;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   background-color: var(--primary);
   border-radius: 0.375rem;
   border: none;
@@ -275,16 +264,19 @@ body {
   margin: 80px 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card-service {
-  padding-bottom: 1px;
+  padding-left: 5px;
   color: var(--gray-1);
+  margin: 10px 10px;
   width: 290px;
   border-radius: 4.567px;
   background: var(--support-02, #fff);
-  box-shadow: 2px 3.653846263885498px 7.307692527770996px -1.826923131942749px rgba(9, 30, 66, 0.25);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.23),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease;
 }
 
@@ -310,14 +302,10 @@ body {
 }
 
 .card-service h2 {
-  color: var(--primary-dark);
-  font-family: "JetBrainsMono";
-  font-size: 18px;
   width: 100%;
 }
 
 .card-service p {
-  font-size: 14px;
   width: 95%;
   padding: 5px;
   text-align: left;
@@ -343,24 +331,34 @@ body {
 
 .services2 ul {
   margin-top: 20px;
-  max-width: 1000px;
   list-style: none;
   display: flex;
   justify-content: space-between;
+  text-align: center;
+
+  font-family: "JetBrainsMono";
+  font-size: 1.02781rem;
+  font-style: normal;
+  font-weight: var(--weight1);
+  line-height: 98.994%; /* 1.0175rem */
+  letter-spacing: 0.00513rem;
 }
 
-.services2 ul li {
+.services2 ul li button {
+  margin: 5px;
   background-color: rgba(64, 64, 64, 0.4);
   color: white;
   padding: 10px;
-  font-family: "JetBrainsMono";
   max-width: 200px;
+  border-right: none;
+  border-bottom: none;
   border-top: rgba(205, 205, 205, 1) 15px solid;
   border-left: rgba(205, 205, 205, 1) 15px solid;
   transition: all 0.4s ease;
+  cursor: pointer;
 }
 
-.services2 ul li:hover {
+.services2-active-button {
   background-color: var(--primary);
   color: white;
   border-top: none;
@@ -390,7 +388,7 @@ body {
   margin-top: 30px;
   margin-left: 50px;
   width: 40%;
-  font-weight: 600;
+  font-weight: var(--weight2);
   color: var(--support-1);
 }
 
@@ -414,11 +412,6 @@ body {
 .card-team:hover {
   border: var(--primary-dark) 2px solid;
 }
-
-.card-team:hover p {
-  content: "Design Product";
-}
-
 .cards-team article img {
   height: 180px;
   padding: 0;
@@ -430,12 +423,6 @@ body {
   margin: 0;
   color: var(--primary-dark, #715fd9);
   text-align: center;
-  font-family: "JetBrainsMono";
-  font-size: 1.875rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 98.994%; /* 1.85613rem */
-  letter-spacing: 0.00938rem;
 
   border-radius: 0.1875rem;
   background: var(--support-02, #fff);
@@ -473,12 +460,6 @@ body {
 
 .comment1 div {
   text-align: left;
-}
-
-.comment1 h3 {
-  font-family: "NotoSerifThai";
-  color: #404040;
-  margin: 0;
 }
 
 .comment1 div img {
@@ -536,10 +517,6 @@ body {
 
 .divider-contact h3 {
   padding-bottom: 70px;
-  font-family: "NotoSerifThai";
-  font-size: 16px;
-  letter-spacing: 0.069em;
-  line-height: 100.49%;
   color: var(--support-1, #453d78);
   transform: translateY(-23px);
 }
@@ -627,24 +604,12 @@ footer ul li {
 
 footer h1 {
   color: var(--primary);
-  font-family: "JetBrainsMono";
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 86.494%; /* 1.08119rem */
-  letter-spacing: 0.05rem;
   padding-bottom: 15px;
   padding-top: 100px;
 }
 
 footer h2 {
   color: #4f4f4f;
-  font-family: "JetBrainsMono";
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 95.994%; /* 0.95994rem */
-  letter-spacing: 0.04rem;
 }
 
 footer h2:hover {
