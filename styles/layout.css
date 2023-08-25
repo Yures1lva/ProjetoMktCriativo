@@ -30,6 +30,13 @@
     padding: 0;
     margin-top: 5px;
   }
+
+  .comment1 {
+    display: flex;
+    align-items: start;
+    margin: 20px;
+    flex: 380px;
+  }
 }
 
 @media (max-width: 660px) {

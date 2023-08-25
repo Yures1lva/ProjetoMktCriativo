@@ -430,7 +430,7 @@ button {
 }
 
 .card-team h4 {
-  margin: 0 0 10px 3px;
+  margin: 0 0 15px 3px;
   text-align: left;
   font-family: "JetBrainsMono";
   font-weight: bolder;
@@ -442,7 +442,7 @@ button {
   font-family: "JetBrainsMono";
   color: var(--gray-01, #828282);
   font-weight: var(--weight3);
-  margin: 3px 0 0 3px;
+  margin: 8px 0 0 3px;
   transform: translate(0, -10px);
 }
 
@@ -470,19 +470,17 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .comment1 {
   display: flex;
-  justify-content: left;
-  width: 45%;
-  margin: 2%;
-  padding-top: 20px;
+  align-items: start;
+  margin: 20px;
+  flex: 30%;
 }
 
-.comment1 img:first-child {
-  height: 110px;
+.img-comment {
+  height: 80%;
   margin-right: 10px;
 }
 
@@ -490,12 +488,21 @@ button {
   text-align: left;
 }
 
+.comment1 h3 {
+  margin: 0;
+  padding: 0;
+
+  color: rgba(64, 64, 64, 0.92);
+  letter-spacing: 0.06875rem;
+}
+
 .comment1 div img {
   margin: 0;
+  padding: 0;
 }
 
 .comment1 p {
-  font-size: 14px;
+  font-size: 12px;
   margin: 0;
 }
 
