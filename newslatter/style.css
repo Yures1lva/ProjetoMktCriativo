@@ -1,0 +1,19 @@
+body{
+}
+
+.section-title-new{
+    text-align: center;
+    font-family: "NotoSerifThai";
+    font-style: normal;
+    font-weight: var(--weight3);
+    font-size: 20px;
+    line-height: 97.49%;
+    letter-spacing: 0.055em;
+    padding-top: 10px;
+    color: var(--support-1);
+}
+
+.newslatter{
+  padding-top: 150px;
+    
+  }
