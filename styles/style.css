@@ -659,10 +659,12 @@ footer {
 }
 
 footer ul {
+  padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: space-between;
+  align-items: start;
   width: 100%;
   box-sizing: border-box;
 
@@ -670,7 +672,7 @@ footer ul {
 
 footer ul li {
   list-style: none;
-  margin-right: 35px;
+
 }
 
 footer ul li:first-child {
