@@ -673,8 +673,24 @@ footer ul {
 
 footer ul li {
   list-style: none;
+  color: var(--gray-2);
+
 
 }
+
+footer ul li a{
+  text-decoration: none;
+  color: var(--gray-2);
+
+}
+footer ul li a:hover{
+  font-weight: 800;
+  cursor: pointer;
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+
 
 footer ul li:first-child {
   width: 30%;
@@ -693,10 +709,7 @@ footer h2 {
 }
 
 footer h2:hover {
-  font-weight: 800;
-  cursor: pointer;
-  color: var(--primary-dark);
-  text-decoration: underline;
+  
 }
 
 footer p {
