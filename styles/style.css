@@ -215,6 +215,10 @@ button {
   width: 100%;
 }
 
+.form-sub a {
+  color: var(--support-2);
+}
+
 
 .input-default {
   outline: none;
@@ -235,7 +239,7 @@ button {
 .button-default {
   align-self: flex-end;
   flex: 1;
-  color: var(--support-02);
+  color:  --support-2;
   background-color: var(--primary);
   border-radius: 0.375rem;
   border: none;
@@ -537,6 +541,8 @@ button {
   margin-top: 10px;
 }
 
+
+
 /* lado esquerdo de contatos - contact-left */
 .contact-left-content {
   margin-right: 1%;
@@ -546,6 +552,7 @@ button {
   flex: 1;
 
 }
+
 
 /* lado direito de contatos contact-right */
 .contact-righ-content {
@@ -630,6 +637,10 @@ button {
   margin: 10px 0;
 }
 
+.button-subscrible{
+  color: var(--support-2);
+}
+
 .icon-social {
   display: flex;
   flex-direction: row;
@@ -708,9 +719,7 @@ footer h2 {
   font-size: 16px;
 }
 
-footer h2:hover {
-  
-}
+
 
 footer p {
   color: var(--gray-2);
