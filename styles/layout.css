@@ -178,6 +178,15 @@
     height: 60px;
   }
 
+  .button-stroke {
+    padding: 20px 20px;
+    display: block;
+    height: 65;
+    width: 100%;
+    cursor: pointer;
+    
+  }
+
   .cards-services {
     width: 100%;
     margin: 80px 0;
