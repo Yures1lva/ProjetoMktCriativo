@@ -219,7 +219,6 @@ button {
   color: var(--support-2);
 }
 
-
 .input-default {
   outline: none;
   height: 45px;
@@ -239,7 +238,7 @@ button {
 .button-default {
   align-self: flex-end;
   flex: 1;
-  color:  var(--support-2);
+  color: var(--support-2);
   background-color: var(--primary);
   border-radius: 0.375rem;
   border: none;
@@ -278,11 +277,15 @@ button {
   color: var(--gray-1);
   margin: 10px 10px;
   width: 290px;
+  height: 290px;
   border-radius: 4.567px;
   background: var(--support-02, #fff);
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.23),
     0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: all 0.3s ease;
+}
+
+.card-service:hover {
+  height: auto;
 }
 
 .card-service:hover img {
@@ -295,15 +298,15 @@ button {
   );
 }
 
-.card1:hover p::before {
-  content: "O marketing se concentra em atender às necessidades dos clientes de maneira lucrativa e sustentável, ao mesmo tempo que alcança objetivos de negócios de longo prazo da empresa. Clique e saiba mais";
+.card1:hover p {
+  opacity: 1;
 }
 
-.card2:hover p::before {
-  content: "O designer de publicações trabalha em estreita colaboração com o redator, o editor e outros membros da equipe de produção para garantir que o design complemente a mensagem da publicação";
+.card2:hover p {
+  opacity: 1;
 }
-.card3:hover p::before {
-  content: "O marketing se concentra em atender às necessidades dos clientes de maneira lucrativa e sustentável, ao mesmo tempo que alcança objetivos de negócios de longo prazo da empresa. Clique e saiba mais";
+.card3:hover p {
+  opacity: 1;
 }
 
 .card-service h2 {
@@ -314,6 +317,8 @@ button {
   width: 95%;
   padding: 5px;
   text-align: left;
+  opacity: 0;
+  color: var(--gray-2);
 }
 
 .mkt-point {
@@ -349,7 +354,7 @@ button {
   letter-spacing: 0.00513rem;
 }
 
-.services2 ul li button{
+.services2 ul li button {
   transition: all 0.4s ease;
   cursor: pointer;
   color: white;
@@ -365,7 +370,6 @@ button {
   border-bottom: none;
   border-top: rgba(205, 205, 205, 1) 15px solid;
   border-left: rgba(205, 205, 205, 1) 15px solid;
-  
 }
 
 .button-services-active {
@@ -412,7 +416,7 @@ button {
 }
 
 .card-team {
-  /* transition: all ease 0.3s; */
+  transition: all ease 0.3s;
   display: block;
   padding: 0;
   border-radius: 0.5rem;
@@ -421,6 +425,12 @@ button {
   margin: 3px 5px;
   max-width: 80%;
   width: 200px;
+
+  -webkit-transition: all 1s -0.25s ease-out;
+  -moz-transition: all 1s -0.25s ease-out;
+  -o-transition: all 1s -0.25s ease-out;
+  -ms-transition: all 1s -0.25s ease-out;
+  transition: all 1s -0.25s ease-out;
 }
 
 .card-team div {
@@ -440,7 +450,14 @@ button {
   border: var(--primary-dark) 2px solid;
 }
 
+.card-team:hover p,
+.card-team:hover h4 {
+  opacity: 1;
+}
+
 .card-team h4 {
+  transition: all ease 0.3s;
+  opacity: 0;
   margin: 0 0 15px 3px;
   text-align: left;
   font-family: "JetBrainsMono";
@@ -449,6 +466,8 @@ button {
 }
 
 .card-team p {
+  transition: all ease 0.3s;
+  opacity: 0;
   text-align: left;
   font-family: "JetBrainsMono";
   color: var(--gray-01, #828282);
@@ -521,24 +540,19 @@ button {
 .contact {
   text-align: center;
 }
-.text-contact{
+.text-contact {
   display: flex;
   align-items: end;
-
 }
 
-.text-contact h1{
+.text-contact h1 {
   margin: 0;
   padding: 0;
-
 }
-
-
 
 .contact div p {
   padding: 0;
   margin-bottom: 5px;
-  
 }
 
 .contact-form {
@@ -547,8 +561,6 @@ button {
   margin-top: 10px;
 }
 
-
-
 /* lado esquerdo de contatos - contact-left */
 .contact-left-content {
   margin-right: 1%;
@@ -556,20 +568,17 @@ button {
   flex-direction: column;
   text-align: left;
   flex: 1;
-
 }
-
 
 /* lado direito de contatos contact-right */
 .contact-righ-content {
   flex: 1;
 }
 
-.contact-righ-content img{
+.contact-righ-content img {
   width: 100%;
   margin: 0;
   padding: 0;
-
 }
 
 .divider-contact {
@@ -577,7 +586,7 @@ button {
   flex-direction: row;
   height: 10px;
   justify-content: center;
-  margin:20px 0;
+  margin: 20px 0;
 }
 
 .divider1-contact {
@@ -590,18 +599,16 @@ button {
 }
 
 .divider-contact h4 {
-  margin:0;
+  margin: 0;
   padding: 0;
   margin: 0 2%;
   color: var(--support-1, #453d78);
-
 }
 
-.contact-left-content h1{
+.contact-left-content h1 {
   margin: 0;
   padding: 0;
 }
-
 
 .form-contact {
   display: inline;
@@ -628,7 +635,6 @@ button {
 .pass-confirm {
   display: flex;
   align-items: top;
-
 }
 
 .form-contact div input {
@@ -643,7 +649,7 @@ button {
   margin: 10px 0;
 }
 
-.button-subscrible{
+.button-subscrible {
   color: var(--support-2);
 }
 
@@ -667,13 +673,9 @@ button {
   border-bottom: var(--primary) 4px solid;
 }
 
-
-
 /* footer */
 footer {
- 
   text-align: left;
-
 }
 
 footer ul {
@@ -685,29 +687,23 @@ footer ul {
   align-items: start;
   width: 100%;
   box-sizing: border-box;
-
 }
 
 footer ul li {
   list-style: none;
   color: var(--gray-2);
-
-
 }
 
-footer ul li a{
+footer ul li a {
   text-decoration: none;
   color: var(--gray-2);
-
 }
-footer ul li a:hover{
+footer ul li a:hover {
   font-weight: 800;
   cursor: pointer;
   color: var(--primary-dark);
   text-decoration: underline;
 }
-
-
 
 footer ul li:first-child {
   width: 30%;
@@ -724,8 +720,6 @@ footer h2 {
   color: var(--gray-2);
   font-size: 16px;
 }
-
-
 
 footer p {
   color: var(--gray-2);

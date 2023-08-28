@@ -38,13 +38,9 @@
     flex: 380px;
   }
 
-
   footer ul li:first-child {
     width: 40%;
   }
-
-
-
 }
 
 @media (max-width: 660px) {
@@ -179,6 +175,11 @@
     border: var(--primary-dark) 2px solid;
   }
 
+  .card-team p,
+  .card-team h4 {
+    display: block;
+  }
+
   .comment1 {
     display: flex;
     justify-content: left;
@@ -275,5 +276,4 @@
   footer ul li:first-child {
     width: 100%;
   }
-
 }
