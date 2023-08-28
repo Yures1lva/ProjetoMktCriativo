@@ -201,13 +201,8 @@
 
   .services2 ul {
     flex-wrap: wrap;
-    justify-content: center;
   }
 
-  .services2 ul li {
-    margin-top: 15px;
-    transform: translateX(-15px);
-  }
 
   .mkt-point {
     margin-top: 100px;
@@ -215,7 +210,6 @@
 
   .team {
     padding-top: 110px;
-    margin-left: 0px;
   }
 
   .descript-us-rightContent {
@@ -234,6 +228,8 @@
   .card-team p,
   .card-team h4 {
     opacity: 1;
+  visibility: visible;
+
   }
 
   .comment1 {

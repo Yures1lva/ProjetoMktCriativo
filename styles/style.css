@@ -342,9 +342,9 @@ button {
   margin-top: 20px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
-
+  gap: 15px;
   font-family: "JetBrainsMono";
   font-size: 1.02781rem;
   font-style: normal;
@@ -353,13 +353,13 @@ button {
   letter-spacing: 0.00513rem;
 }
 
+
 .services2 ul li button {
   transition: all 0.4s ease;
   cursor: pointer;
   color: white;
   padding: 10px;
   max-width: 200px;
-  margin: 5px;
 }
 
 .button-services-disable {
@@ -412,6 +412,7 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 10px;
+  gap: 5px;
 }
 
 .card-team {
@@ -421,7 +422,6 @@ button {
   border-radius: 0.5rem;
   border: transparent 2px solid;
   box-sizing: border-box;
-  margin: 3px 5px;
   max-width: 80%;
   width: 200px;
 
