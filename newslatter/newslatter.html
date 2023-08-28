@@ -20,19 +20,24 @@
 </script>
 
 <body>
-  <header>
-    <nav class="navbar">
+  <header id="header">
+    <nav id="nav" class="navbar">
       <div class="container">
         <div class="logo">
           <a href="#"><img src="/assets/imgs/logo.png" alt="Logo do site, um nome que diz Marketing Criativo"></a>
         </div>
-        <ul class="menu">
-          <li><a href="/index.html#home">Início</a></li>
-          <li><a href="/index.html#services">Serviços</a></li>
-          <li><a href="/index.html#about">Sobre</a></li>
-          <li><a href="/index.html#contact">Contato</a></li>
+        <button id="btn-menu" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu"
+          aria-expanded="false">Menu
+          <span id="hamb"></span>
+        </button>
+        <ul role="menu" id="menu" class="menu">
+          <li><a id="linkmenu" href="/index.html#home">Início</a></li>
+          <li><a id="linkmenu2" href="/index.html#services">Serviços</a></li>
+          <li><a id="linkmenu3" href="/index.html#about">Sobre</a></li>
+          <li><a id="linkmenu4" href="/index.html#contact">Contato</a></li>
 
-          <li><a href="/index.html#contact"><button class="button-stroke">Já tem uma conta?</button></a></li>
+          <li><a id="linkmenu5" href="/index.html#contact"><button class="button-stroke">Já tem uma
+                conta?</button></a></li>
         </ul>
       </div>
     </nav>
@@ -75,7 +80,7 @@
   </footer>
 
 
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>

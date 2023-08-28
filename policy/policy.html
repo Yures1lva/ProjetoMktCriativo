@@ -13,56 +13,61 @@
 </head>
 
 <style>
-    .policy-content{
-  padding-top: 150px;
-  text-align: center;
-    }
+  .policy-content {
+    padding-top: 150px;
+    text-align: center;
+  }
 
-    .policy-content img{
-        padding-top: 50px;
+  .policy-content img {
+    padding-top: 50px;
     width: 40%;
-    }
+  }
 
-    h2{
-        padding-top: 10px;
-        font-family: "NotoSerifThai";
-        color: var(--gray-3);
-    }
-    p{
-        margin: 0;
-        padding: 0;
-        font-family: "NotoSerifThai";
-        color: var(--gray-2);
-    
-    }
+  h2 {
+    padding-top: 10px;
+    font-family: "NotoSerifThai";
+    color: var(--gray-3);
+  }
 
-    .text-content{
-        padding-top: 20px;
-        margin: 0 auto;
-        text-align: left;
-        max-width: 800px;
-    }
+  p {
+    margin: 0;
+    padding: 0;
+    font-family: "NotoSerifThai";
+    color: var(--gray-2);
 
-    footer h2{
-        padding-top: 0;
-    }
+  }
 
+  .text-content {
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 800px;
+  }
+
+  footer h2 {
+    padding-top: 0;
+  }
 </style>
 
 <body>
-  <header>
-    <nav class="navbar">
+  <header id="header">
+    <nav id="nav" class="navbar">
       <div class="container">
         <div class="logo">
           <a href="#"><img src="/assets/imgs/logo.png" alt="Logo do site, um nome que diz Marketing Criativo"></a>
         </div>
-        <ul class="menu">
-          <li><a href="/index.html#home">Início</a></li>
-          <li><a href="/index.html#services">Serviços</a></li>
-          <li><a href="/index.html#about">Sobre</a></li>
-          <li><a href="/index.html#contact">Contato</a></li>
+        <button id="btn-menu" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu"
+          aria-expanded="false">Menu
+          <span id="hamb"></span>
+        </button>
+        <ul role="menu" id="menu" class="menu">
+          <li><a id="linkmenu" href="#home">Início</a></li>
+          <li><a id="linkmenu2" href="#services">Serviços</a></li>
+          <li><a id="linkmenu3" href="#about">Sobre</a></li>
+          <li><a id="linkmenu4" href="#contact">Contato</a></li>
 
-          <li><a href="/index.html#contact"><button class="button-stroke">Já tem uma conta?</button></a></li>
+          <li><a id="linkmenu5" href="newslatter/newslatter.html"><button class="button-stroke">Já tem uma
+                conta?</button></a></li>
         </ul>
       </div>
     </nav>
@@ -71,35 +76,51 @@
   <section class="container policy-content" id="home">
     <h2 id="homePolicy" class="section-title">Política de <span class="destaque">Privacidade </span>.</h2>
     <img src="/assets/imgs/policy.jpg" alt="ilustração de sucesso pela inscrição">
-  
+
     <div class="text-content">
-        <h2>Política de Privacidade do Site Marketing Criativo</h2>
-        <p>Esta Política de Privacidade descreve como o site "Marketing Criativo", operado como um projeto de portfólio pessoal, coleta, utiliza e protege as informações pessoais fornecidas pelos usuários durante o acesso e a navegação pelo site. Esta política se aplica somente a este site e não se estende a quaisquer outros sites ou serviços que possam estar vinculados a partir deste.</p>
-        
-        <h2>Coleta de Informações</h2>
-        <p>O site Marketing Criativo é um projeto de portfólio estático desenvolvido e implantado usando a plataforma gratuita de deploy Netlify. Durante a sua visita a este site, não coletamos informações pessoais identificáveis de forma alguma. Não usamos cookies, formulários de contato ou quaisquer outros mecanismos para rastrear ou coletar informações pessoais</p>
-        
-        <h2>Ferramenta de Deploy</h2>
-        <p>O site Marketing Criativo utiliza a plataforma Netlify para o deploy e hospedagem. O Netlify pode coletar dados de uso e métricas para fins de análise e melhoria de serviços. No entanto, como proprietário do site, não temos acesso a informações específicas de identificação pessoal coletadas pela Netlify.</p>
+      <h2>Política de Privacidade do Site Marketing Criativo</h2>
+      <p>Esta Política de Privacidade descreve como o site "Marketing Criativo", operado como um projeto de portfólio
+        pessoal, coleta, utiliza e protege as informações pessoais fornecidas pelos usuários durante o acesso e a
+        navegação pelo site. Esta política se aplica somente a este site e não se estende a quaisquer outros sites ou
+        serviços que possam estar vinculados a partir deste.</p>
 
-        <h2>Links Externos</h2>
-        <p>O site Marketing Criativo pode conter links para sites externos que não estão sob o nosso controle. Não somos responsáveis pelas práticas de privacidade ou conteúdo desses sites. Recomendamos que você revise as políticas de privacidade de qualquer site que visite através de links fornecidos no nosso site.</p>
+      <h2>Coleta de Informações</h2>
+      <p>O site Marketing Criativo é um projeto de portfólio estático desenvolvido e implantado usando a plataforma
+        gratuita de deploy Netlify. Durante a sua visita a este site, não coletamos informações pessoais identificáveis
+        de forma alguma. Não usamos cookies, formulários de contato ou quaisquer outros mecanismos para rastrear ou
+        coletar informações pessoais</p>
 
-        <h2>Projeto de Portfólio</h2>
-        <p>O site Marketing Criativo é um projeto pessoal criado para fins de exibição de habilidades e experiências no campo do design e desenvolvimento web. Não coletamos informações pessoais, não solicitamos dados pessoais e não realizamos interações transacionais neste site.</p>
+      <h2>Ferramenta de Deploy</h2>
+      <p>O site Marketing Criativo utiliza a plataforma Netlify para o deploy e hospedagem. O Netlify pode coletar dados
+        de uso e métricas para fins de análise e melhoria de serviços. No entanto, como proprietário do site, não temos
+        acesso a informações específicas de identificação pessoal coletadas pela Netlify.</p>
 
-        <h2>Alterações na Política de Privacidade</h2>
-        <p>Podemos atualizar esta Política de Privacidade periodicamente para refletir eventuais mudanças nas práticas de privacidade. Quaisquer alterações feitas serão publicadas nesta página, e a data de atualização mais recente será indicada no início do documento.</p>
+      <h2>Links Externos</h2>
+      <p>O site Marketing Criativo pode conter links para sites externos que não estão sob o nosso controle. Não somos
+        responsáveis pelas práticas de privacidade ou conteúdo desses sites. Recomendamos que você revise as políticas
+        de privacidade de qualquer site que visite através de links fornecidos no nosso site.</p>
 
-        <h2>Contato</h2>
-        <p>Se você tiver alguma dúvida ou preocupação sobre esta Política de Privacidade ou sobre o uso do site Marketing Criativo, entre em contato através do email <a href="mailto:yure.siilva9@gmail.com?" subject="subject text">yure.siilva9@gmail.com</a>.</p>
+      <h2>Projeto de Portfólio</h2>
+      <p>O site Marketing Criativo é um projeto pessoal criado para fins de exibição de habilidades e experiências no
+        campo do design e desenvolvimento web. Não coletamos informações pessoais, não solicitamos dados pessoais e não
+        realizamos interações transacionais neste site.</p>
 
-        <br>
-        <br>
-        <br>
-        <p>Data de Atualização: agostasao de 2023</p>
+      <h2>Alterações na Política de Privacidade</h2>
+      <p>Podemos atualizar esta Política de Privacidade periodicamente para refletir eventuais mudanças nas práticas de
+        privacidade. Quaisquer alterações feitas serão publicadas nesta página, e a data de atualização mais recente
+        será indicada no início do documento.</p>
+
+      <h2>Contato</h2>
+      <p>Se você tiver alguma dúvida ou preocupação sobre esta Política de Privacidade ou sobre o uso do site Marketing
+        Criativo, entre em contato através do email <a href="mailto:yure.siilva9@gmail.com?"
+          subject="subject text">yure.siilva9@gmail.com</a>.</p>
+
+      <br>
+      <br>
+      <br>
+      <p>Data de Atualização: agostasao de 2023</p>
     </div>
-</section>
+  </section>
 
 
 
@@ -123,7 +144,7 @@
       </li>
       <li>
         <h1>Contato</h1>
-        <h2><a target="_blank"  href="mailto:yure.siilva9@gmail.com?" subject="subject text">Email</a></h2>
+        <h2><a target="_blank" href="mailto:yure.siilva9@gmail.com?" subject="subject text">Email</a></h2>
         <h2><a target="_blank" href="https://wa.me/5594991302806">Whatsapp</a></h2>
         <h2><a target="_blank" href="https://www.instagram.com/yures1lva/">Instagram</a></h2>
         <h2><a target="_blank" href="https://www.linkedin.com/in/yuresilva/">Linkedin</a></h2>
@@ -131,7 +152,7 @@
     </ul>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>

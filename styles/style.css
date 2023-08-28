@@ -87,12 +87,16 @@ button {
 }
 
 /* Estilos do menu */
-.menu {
+#menu {
   flex: 1 1 auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
+}
+
+#btn-menu {
+  display: none;
 }
 
 .menu li {
@@ -298,27 +302,22 @@ button {
   );
 }
 
-.card1:hover p {
-  opacity: 1;
-}
-
-.card2:hover p {
-  opacity: 1;
-}
-.card3:hover p {
-  opacity: 1;
-}
-
-.card-service h2 {
-  width: 100%;
-}
-
 .card-service p {
   width: 95%;
   padding: 5px;
   text-align: left;
   opacity: 0;
   color: var(--gray-2);
+}
+
+.card1:hover p,
+.card2:hover p,
+.card3:hover p {
+  opacity: 1;
+}
+
+.card-service h2 {
+  width: 100%;
 }
 
 .mkt-point {
@@ -433,6 +432,11 @@ button {
   transition: all 1s -0.25s ease-out;
 }
 
+.card-team:hover {
+  border: var(--primary-dark) 2px solid;
+  height: 400px;
+}
+
 .card-team div {
   display: flex;
   justify-content: center;
@@ -446,15 +450,6 @@ button {
   border-radius: 0.5rem;
 }
 
-.card-team:hover {
-  border: var(--primary-dark) 2px solid;
-}
-
-.card-team:hover p,
-.card-team:hover h4 {
-  opacity: 1;
-}
-
 .card-team h4 {
   transition: all ease 0.3s;
   opacity: 0;
@@ -463,6 +458,7 @@ button {
   font-family: "JetBrainsMono";
   font-weight: bolder;
   color: var(--support-01, #453d78);
+  visibility: hidden;
 }
 
 .card-team p {
@@ -474,6 +470,14 @@ button {
   font-weight: var(--weight3);
   margin: 8px 0 0 3px;
   transform: translate(0, -10px);
+  visibility: hidden;
+}
+
+.card-team:hover p,
+.card-team:hover h4 {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
 }
 
 .cards-team article h1 {
