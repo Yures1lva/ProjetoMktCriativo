@@ -56,22 +56,55 @@
   for (let i = 0; i < 5; i++) {}
 
   $btn1.addEventListener("click", function () {
-    toggleBtn($btn1);
+    toggleBtn($btn1, "assets/imgs/person1.png");
   });
 
   $btn2.addEventListener("click", function () {
-    toggleBtn($btn2);
+    toggleBtn($btn2, "assets/imgs/person2.png");
   });
 
   $btn3.addEventListener("click", function () {
-    toggleBtn($btn3);
+    toggleBtn($btn3, "assets/imgs/person3.png");
   });
 
   $btn4.addEventListener("click", function () {
-    toggleBtn($btn4);
+    toggleBtn($btn4, "assets/imgs/person4.png");
   });
 
-  function toggleBtn(elemento) {
-    elemento.classList.toggle("button-services-active");
+  function toggleBtn(elemento, img) {
+    if (elemento.classList.contains("button-services-active")) {
+      document.getElementById("img-service").src = "assets/imgs/person.png";
+    }
+
+    if (elemento === $btn1) {
+      elemento.classList.toggle("button-services-active");
+      document.getElementById("img-service").src = img;
+      $btn2.classList.remove("button-services-active");
+      $btn3.classList.remove("button-services-active");
+      $btn4.classList.remove("button-services-active");
+    } else if (elemento === $btn2) {
+      elemento.classList.toggle("button-services-active");
+      document.getElementById("img-service").src = img;
+      $btn1.classList.remove("button-services-active");
+      $btn3.classList.remove("button-services-active");
+      $btn4.classList.remove("button-services-active");
+    } else if (elemento === $btn3) {
+      elemento.classList.toggle("button-services-active");
+      document.getElementById("img-service").src = img;
+      $btn1.classList.remove("button-services-active");
+      $btn2.classList.remove("button-services-active");
+      $btn4.classList.remove("button-services-active");
+    } else if (elemento === $btn4) {
+      elemento.classList.toggle("button-services-active");
+      document.getElementById("img-service").src = img;
+      $btn1.classList.remove("button-services-active");
+      $btn2.classList.remove("button-services-active");
+      $btn3.classList.remove("button-services-active");
+    } else {
+      $btn1.classList.remove("button-services-active");
+      $btn2.classList.remove("button-services-active");
+      $btn3.classList.remove("button-services-active");
+      $btn4.classList.remove("button-services-active");
+    }
   }
 })();
