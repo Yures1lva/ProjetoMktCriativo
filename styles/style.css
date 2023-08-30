@@ -336,6 +336,7 @@ button {
 .services2 img {
   padding-top: 180px;
   height: 350px;
+  transition: all ease 1s;
 }
 
 .services2 ul {
@@ -352,7 +353,6 @@ button {
   line-height: 98.994%; /* 1.0175rem */
   letter-spacing: 0.00513rem;
 }
-
 
 .services2 ul li button {
   transition: all 0.4s ease;

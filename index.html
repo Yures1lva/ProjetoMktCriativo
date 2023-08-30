@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- utilizando div no lugar de forms, pois forms sem 
+  rotas corretas dão alguns bugs -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +33,7 @@
           <li><a id="linkmenu3" href="#about">Sobre</a></li>
           <li><a id="linkmenu4" href="#contact">Contato</a></li>
 
-          <li><a id="linkmenu5" href="newslatter/newslatter.html"><button class="button-stroke">Já tem uma
+          <li><a id="linkmenu5" href="#new-account"><button class="button-stroke">Já tem uma
                 conta?</button></a></li>
         </ul>
       </div>
@@ -51,12 +54,11 @@
       </div>
       <div class="item2">
         <p><b>Email</b></p>
-        <form class="form-sub">
-
-          <input class="input-default" type="email" name="email" id="email-address" placeholder="Digite seu email aqui">
+        <div class="form-sub">
+          <input class="input-default" type="email" placeholder="Digite seu email aqui">
           <a href="newslatter/newslatter.html"><button class="button-default ">Se inscrever</button></a>
 
-        </form>
+        </div>
       </div>
     </div>
     <div class="top-content-column-right">
@@ -250,10 +252,11 @@
 
       <div class="contact-left-content">
 
-        <form id="new-accoaunt" class="form-sub">
+        <div id="new-account" class="form-sub">
           <input class="input-default" type="email" name="email" id="email-address" placeholder="Digite seu email aqui">
-          <button class="button-default button-subscrible">Se inscrever</button>
-        </form>
+          <a href="/newslatter/newslatter.html"><button class="button-default button-subscrible">Se
+              inscrever</button></a>
+        </div>
         <div class="divider-contact">
           <div class="divider1-contact"></div>
           <h4>ou</h4>
@@ -262,22 +265,22 @@
 
         <h1 class="title">Crie uma conta e<br>peça seu <span class="destaque">Orçamento</span>.</h1>
 
-        <form class="form-contact">
-          <input class="input-default" type="email" name="email" id="email-address" placeholder="Email">
+        <div class="form-contact">
+          <input class="input-default" type="email" placeholder="Email">
 
-          <input class="input-default" type="text" name="name" id="name" placeholder="Nome">
+          <input class="input-default" type="text">
 
-          <input class="input-default" type="text" name="number" id="number" placeholder="Número de celular">
+          <input class="input-default" type="text" placeholder="Número de celular">
 
           <div class="pass-confirm">
-            <input class="input-default" type="password" name="pass" id="pass" placeholder="Senha">
-            <input class="input-default" type="password" name="passConfirmer" id="pass" placeholder="Confirmar senha">
+            <input class="input-default" type="password" placeholder="Senha">
+            <input class="input-default" type="password" placeholder="Confirmar senha">
 
           </div>
 
           <button class="button-stroke">Cadastrar</button>
 
-        </form>
+        </div>
 
         <p>Contato direto ou nossas redes? utilize</p>
         <div class="icon-social">
