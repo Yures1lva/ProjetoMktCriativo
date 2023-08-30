@@ -184,7 +184,6 @@
     height: 65;
     width: 100%;
     cursor: pointer;
-    
   }
 
   .cards-services {
@@ -212,7 +211,6 @@
     flex-wrap: wrap;
   }
 
-
   .mkt-point {
     margin-top: 100px;
   }
@@ -237,8 +235,7 @@
   .card-team p,
   .card-team h4 {
     opacity: 1;
-  visibility: visible;
-
+    visibility: visible;
   }
 
   .comment1 {
@@ -327,7 +324,7 @@
   }
 
   footer h1 {
-    padding-top: 10px;
+    padding-top: 100px;
   }
 
   footer h2 {
