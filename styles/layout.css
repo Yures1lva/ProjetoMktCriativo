@@ -315,7 +315,6 @@
     height: auto;
     width: 100%;
     transition: all ease 1s;
-    border: 2px red solid;
   }
 
   footer ul {
