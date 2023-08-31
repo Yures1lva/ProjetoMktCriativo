@@ -308,6 +308,16 @@
     margin-top: 10px;
   }
 
+  .services2 img {
+    padding: 0;
+    padding-top: 180px;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    transition: all ease 1s;
+    border: 2px red solid;
+  }
+
   footer ul {
     display: flex;
     flex-direction: column;
