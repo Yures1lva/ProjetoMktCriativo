@@ -331,6 +331,8 @@ button {
   width: 100%;
   height: 800px;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .services2 img {

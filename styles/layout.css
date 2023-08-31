@@ -317,6 +317,15 @@
     transition: all ease 1s;
   }
 
+  .descript-us div img {
+    width: 80%;
+  }
+
+  .img-comment {
+    height: 40%;
+    margin-right: 10px;
+  }
+
   footer ul {
     display: flex;
     flex-direction: column;
