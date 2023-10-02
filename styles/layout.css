@@ -89,6 +89,9 @@
     margin: 40px 0;
   }
 
+  #menu li:last-child {
+    margin: 0 20px;
+  }
   #btn-menu {
     display: flex;
     border: none;
